@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0510B2A61944399F00D6CBF7 /* VRCCellNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0510B2A41944399F00D6CBF7 /* VRCCellNumberField.m */; };
+		0510B2A71944399F00D6CBF7 /* VRCCellNumberField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0510B2A51944399F00D6CBF7 /* VRCCellNumberField.xib */; };
+		0510B2AB194442CD00D6CBF7 /* VRCCellPictureSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0510B2A9194442CD00D6CBF7 /* VRCCellPictureSelector.m */; };
+		0510B2AC194442CD00D6CBF7 /* VRCCellPictureSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0510B2AA194442CD00D6CBF7 /* VRCCellPictureSelector.xib */; };
+		0510B2B11945108600D6CBF7 /* VRCPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0510B2AF1945108600D6CBF7 /* VRCPhotoViewController.m */; };
+		0510B2B21945108600D6CBF7 /* VRCPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0510B2B01945108600D6CBF7 /* VRCPhotoViewController.xib */; };
+		0510B2B419462E5A00D6CBF7 /* VRCProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0510B2B319462E5A00D6CBF7 /* VRCProductViewController.xib */; };
+		0510B2B7194631CA00D6CBF7 /* VRCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0510B2B6194631CA00D6CBF7 /* VRCMainViewController.m */; };
+		0510B2B9194631F600D6CBF7 /* VRCProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0510B2B8194631F600D6CBF7 /* VRCProductsListViewController.xib */; };
+		0510B2BB1946511C00D6CBF7 /* TestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0510B2BA1946511C00D6CBF7 /* TestUtilities.m */; };
+		057FD559193FF20800D54BB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD558193FF20800D54BB7 /* Foundation.framework */; };
+		057FD55B193FF20800D54BB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD55A193FF20800D54BB7 /* CoreGraphics.framework */; };
+		057FD55D193FF20800D54BB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD55C193FF20800D54BB7 /* UIKit.framework */; };
+		057FD563193FF20800D54BB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 057FD561193FF20800D54BB7 /* InfoPlist.strings */; };
+		057FD565193FF20800D54BB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD564193FF20800D54BB7 /* main.m */; };
+		057FD569193FF20800D54BB7 /* VRCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD568193FF20800D54BB7 /* VRCAppDelegate.m */; };
+		057FD577193FF20800D54BB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057FD576193FF20800D54BB7 /* Images.xcassets */; };
+		057FD57E193FF20800D54BB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD57D193FF20800D54BB7 /* XCTest.framework */; };
+		057FD57F193FF20800D54BB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD558193FF20800D54BB7 /* Foundation.framework */; };
+		057FD580193FF20800D54BB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD55C193FF20800D54BB7 /* UIKit.framework */; };
+		057FD588193FF20800D54BB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 057FD586193FF20800D54BB7 /* InfoPlist.strings */; };
+		057FD58A193FF20800D54BB7 /* TestDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD589193FF20800D54BB7 /* TestDatabase.m */; };
+		057FD597193FF68800D54BB7 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD596193FF68800D54BB7 /* Product.m */; };
+		057FD59C193FF7CB00D54BB7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 057FD598193FF74C00D54BB7 /* libsqlite3.dylib */; };
+		057FD59E193FFFF300D54BB7 /* products.sql in Resources */ = {isa = PBXBuildFile; fileRef = 057FD59D193FFFF300D54BB7 /* products.sql */; };
+		057FD5A2194000CB00D54BB7 /* VRCProductsDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5A1194000CB00D54BB7 /* VRCProductsDatabaseManager.m */; };
+		057FD5A6194007B600D54BB7 /* VRCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5A5194007B600D54BB7 /* VRCUtilities.m */; };
+		057FD5A919401B4200D54BB7 /* VRCDatabaseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5A819401B4200D54BB7 /* VRCDatabaseRecord.m */; };
+		057FD5AC1940273B00D54BB7 /* Product+AddProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5AB1940273B00D54BB7 /* Product+AddProduct.m */; };
+		057FD5AF1941357B00D54BB7 /* Product+GetProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5AE1941357B00D54BB7 /* Product+GetProducts.m */; };
+		057FD5B219413BF500D54BB7 /* Product+UpdateProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5B119413BF500D54BB7 /* Product+UpdateProduct.m */; };
+		057FD5B51941503B00D54BB7 /* Product+DeleteProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5B41941503B00D54BB7 /* Product+DeleteProduct.m */; };
+		057FD5B819418BE600D54BB7 /* Product+LoadProductDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5B719418BE600D54BB7 /* Product+LoadProductDetails.m */; };
+		057FD5BF19429E5B00D54BB7 /* VRCProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5BC19429E5B00D54BB7 /* VRCProductViewController.m */; };
+		057FD5C019429E5C00D54BB7 /* VRCProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5BE19429E5B00D54BB7 /* VRCProductsListViewController.m */; };
+		057FD5C91942A4FE00D54BB7 /* VRCCellTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5C71942A4FE00D54BB7 /* VRCCellTextField.m */; };
+		057FD5CA1942A4FE00D54BB7 /* VRCCellTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057FD5C81942A4FE00D54BB7 /* VRCCellTextField.xib */; };
+		057FD5CE1942B3DB00D54BB7 /* VRCCellTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5CC1942B3DB00D54BB7 /* VRCCellTextView.m */; };
+		057FD5CF1942B3DB00D54BB7 /* VRCCellTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057FD5CD1942B3DB00D54BB7 /* VRCCellTextView.xib */; };
+		057FD5D31942BFB700D54BB7 /* VRCCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5D11942BFB700D54BB7 /* VRCCellLabel.m */; };
+		057FD5D41942BFB700D54BB7 /* VRCCellLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057FD5D21942BFB700D54BB7 /* VRCCellLabel.xib */; };
+		057FD5E21942CEE900D54BB7 /* VRCAddColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5E01942CEE900D54BB7 /* VRCAddColorViewController.m */; };
+		057FD5E31942CEE900D54BB7 /* VRCAddColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057FD5E11942CEE900D54BB7 /* VRCAddColorViewController.xib */; };
+		057FD5E71942E69C00D54BB7 /* VRCAddStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057FD5E51942E69C00D54BB7 /* VRCAddStoreViewController.m */; };
+		057FD5E81942E69C00D54BB7 /* VRCAddStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057FD5E61942E69C00D54BB7 /* VRCAddStoreViewController.xib */; };
+		05E4703D1947F98D00BBCB69 /* VRCProductsAppTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05E4703C1947F98D00BBCB69 /* VRCProductsAppTests-Info.plist */; };
+		05E4703E1947FB7100BBCB69 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057FD56A193FF20800D54BB7 /* Main_iPhone.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		057FD581193FF20800D54BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057FD54D193FF20800D54BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057FD554193FF20800D54BB7;
+			remoteInfo = ProductsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0510B2A31944399F00D6CBF7 /* VRCCellNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCCellNumberField.h; sourceTree = "<group>"; };
+		0510B2A41944399F00D6CBF7 /* VRCCellNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCCellNumberField.m; sourceTree = "<group>"; };
+		0510B2A51944399F00D6CBF7 /* VRCCellNumberField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCCellNumberField.xib; sourceTree = "<group>"; };
+		0510B2A8194442CD00D6CBF7 /* VRCCellPictureSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCCellPictureSelector.h; sourceTree = "<group>"; };
+		0510B2A9194442CD00D6CBF7 /* VRCCellPictureSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCCellPictureSelector.m; sourceTree = "<group>"; };
+		0510B2AA194442CD00D6CBF7 /* VRCCellPictureSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCCellPictureSelector.xib; sourceTree = "<group>"; };
+		0510B2AD194450AF00D6CBF7 /* VRCCellPictureSelectorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRCCellPictureSelectorDelegate.h; sourceTree = "<group>"; };
+		0510B2AE1945108600D6CBF7 /* VRCPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCPhotoViewController.h; sourceTree = "<group>"; };
+		0510B2AF1945108600D6CBF7 /* VRCPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCPhotoViewController.m; sourceTree = "<group>"; };
+		0510B2B01945108600D6CBF7 /* VRCPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCPhotoViewController.xib; sourceTree = "<group>"; };
+		0510B2B319462E5A00D6CBF7 /* VRCProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCProductViewController.xib; sourceTree = "<group>"; };
+		0510B2B5194631CA00D6CBF7 /* VRCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCMainViewController.h; sourceTree = "<group>"; };
+		0510B2B6194631CA00D6CBF7 /* VRCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCMainViewController.m; sourceTree = "<group>"; };
+		0510B2B8194631F600D6CBF7 /* VRCProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCProductsListViewController.xib; sourceTree = "<group>"; };
+		0510B2BA1946511C00D6CBF7 /* TestUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtilities.m; sourceTree = "<group>"; };
+		0510B2BC19465E5500D6CBF7 /* SampleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleData.h; sourceTree = "<group>"; };
+		057FD555193FF20800D54BB7 /* ProductsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		057FD558193FF20800D54BB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		057FD55A193FF20800D54BB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		057FD55C193FF20800D54BB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		057FD562193FF20800D54BB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		057FD564193FF20800D54BB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		057FD566193FF20800D54BB7 /* VRCProductsApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VRCProductsApp-Prefix.pch"; sourceTree = "<group>"; };
+		057FD567193FF20800D54BB7 /* VRCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRCAppDelegate.h; sourceTree = "<group>"; };
+		057FD568193FF20800D54BB7 /* VRCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRCAppDelegate.m; sourceTree = "<group>"; };
+		057FD56B193FF20800D54BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		057FD576193FF20800D54BB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		057FD57C193FF20800D54BB7 /* VRCProductsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRCProductsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		057FD57D193FF20800D54BB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		057FD587193FF20800D54BB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		057FD589193FF20800D54BB7 /* TestDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDatabase.m; sourceTree = "<group>"; };
+		057FD595193FF68800D54BB7 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		057FD596193FF68800D54BB7 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		057FD598193FF74C00D54BB7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		057FD59A193FF79D00D54BB7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		057FD59D193FFFF300D54BB7 /* products.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = products.sql; sourceTree = "<group>"; };
+		057FD5A0194000CB00D54BB7 /* VRCProductsDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCProductsDatabaseManager.h; sourceTree = "<group>"; };
+		057FD5A1194000CB00D54BB7 /* VRCProductsDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCProductsDatabaseManager.m; sourceTree = "<group>"; };
+		057FD5A4194007B600D54BB7 /* VRCUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCUtilities.h; sourceTree = "<group>"; };
+		057FD5A5194007B600D54BB7 /* VRCUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCUtilities.m; sourceTree = "<group>"; };
+		057FD5A719401B4200D54BB7 /* VRCDatabaseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCDatabaseRecord.h; sourceTree = "<group>"; };
+		057FD5A819401B4200D54BB7 /* VRCDatabaseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCDatabaseRecord.m; sourceTree = "<group>"; };
+		057FD5AA1940273B00D54BB7 /* Product+AddProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+AddProduct.h"; sourceTree = "<group>"; };
+		057FD5AB1940273B00D54BB7 /* Product+AddProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+AddProduct.m"; sourceTree = "<group>"; };
+		057FD5AD1941357B00D54BB7 /* Product+GetProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+GetProducts.h"; sourceTree = "<group>"; };
+		057FD5AE1941357B00D54BB7 /* Product+GetProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+GetProducts.m"; sourceTree = "<group>"; };
+		057FD5B019413BF500D54BB7 /* Product+UpdateProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+UpdateProduct.h"; sourceTree = "<group>"; };
+		057FD5B119413BF500D54BB7 /* Product+UpdateProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+UpdateProduct.m"; sourceTree = "<group>"; };
+		057FD5B31941503B00D54BB7 /* Product+DeleteProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+DeleteProduct.h"; sourceTree = "<group>"; };
+		057FD5B41941503B00D54BB7 /* Product+DeleteProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+DeleteProduct.m"; sourceTree = "<group>"; };
+		057FD5B619418BE600D54BB7 /* Product+LoadProductDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+LoadProductDetails.h"; sourceTree = "<group>"; };
+		057FD5B719418BE600D54BB7 /* Product+LoadProductDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+LoadProductDetails.m"; sourceTree = "<group>"; };
+		057FD5BB19429E5B00D54BB7 /* VRCProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCProductViewController.h; sourceTree = "<group>"; };
+		057FD5BC19429E5B00D54BB7 /* VRCProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCProductViewController.m; sourceTree = "<group>"; };
+		057FD5BD19429E5B00D54BB7 /* VRCProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCProductsListViewController.h; sourceTree = "<group>"; };
+		057FD5BE19429E5B00D54BB7 /* VRCProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCProductsListViewController.m; sourceTree = "<group>"; };
+		057FD5C61942A4FE00D54BB7 /* VRCCellTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCCellTextField.h; sourceTree = "<group>"; };
+		057FD5C71942A4FE00D54BB7 /* VRCCellTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCCellTextField.m; sourceTree = "<group>"; };
+		057FD5C81942A4FE00D54BB7 /* VRCCellTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCCellTextField.xib; sourceTree = "<group>"; };
+		057FD5CB1942B3DB00D54BB7 /* VRCCellTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCCellTextView.h; sourceTree = "<group>"; };
+		057FD5CC1942B3DB00D54BB7 /* VRCCellTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCCellTextView.m; sourceTree = "<group>"; };
+		057FD5CD1942B3DB00D54BB7 /* VRCCellTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCCellTextView.xib; sourceTree = "<group>"; };
+		057FD5D01942BFB700D54BB7 /* VRCCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCCellLabel.h; sourceTree = "<group>"; };
+		057FD5D11942BFB700D54BB7 /* VRCCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCCellLabel.m; sourceTree = "<group>"; };
+		057FD5D21942BFB700D54BB7 /* VRCCellLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCCellLabel.xib; sourceTree = "<group>"; };
+		057FD5DF1942CEE900D54BB7 /* VRCAddColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCAddColorViewController.h; sourceTree = "<group>"; };
+		057FD5E01942CEE900D54BB7 /* VRCAddColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCAddColorViewController.m; sourceTree = "<group>"; };
+		057FD5E11942CEE900D54BB7 /* VRCAddColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCAddColorViewController.xib; sourceTree = "<group>"; };
+		057FD5E41942E69C00D54BB7 /* VRCAddStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCAddStoreViewController.h; sourceTree = "<group>"; };
+		057FD5E51942E69C00D54BB7 /* VRCAddStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCAddStoreViewController.m; sourceTree = "<group>"; };
+		057FD5E61942E69C00D54BB7 /* VRCAddStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRCAddStoreViewController.xib; sourceTree = "<group>"; };
+		057FD5E91942F6E100D54BB7 /* VRCCellTextFieldDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRCCellTextFieldDelegate.h; sourceTree = "<group>"; };
+		057FD5EA1943A75400D54BB7 /* VRCCellTextViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRCCellTextViewDelegate.h; sourceTree = "<group>"; };
+		05E4703A1947F8D700BBCB69 /* VRCProductsApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VRCProductsApp-Info.plist"; sourceTree = "<group>"; };
+		05E4703C1947F98D00BBCB69 /* VRCProductsAppTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VRCProductsAppTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		057FD552193FF20800D54BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057FD59C193FF7CB00D54BB7 /* libsqlite3.dylib in Frameworks */,
+				057FD55B193FF20800D54BB7 /* CoreGraphics.framework in Frameworks */,
+				057FD55D193FF20800D54BB7 /* UIKit.framework in Frameworks */,
+				057FD559193FF20800D54BB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057FD579193FF20800D54BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057FD57E193FF20800D54BB7 /* XCTest.framework in Frameworks */,
+				057FD580193FF20800D54BB7 /* UIKit.framework in Frameworks */,
+				057FD57F193FF20800D54BB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		057FD54C193FF20800D54BB7 = {
+			isa = PBXGroup;
+			children = (
+				057FD55E193FF20800D54BB7 /* ProductsApp */,
+				057FD583193FF20800D54BB7 /* ProductsAppTests */,
+				057FD557193FF20800D54BB7 /* Frameworks */,
+				057FD556193FF20800D54BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		057FD556193FF20800D54BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				057FD555193FF20800D54BB7 /* ProductsApp.app */,
+				057FD57C193FF20800D54BB7 /* VRCProductsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		057FD557193FF20800D54BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				057FD59A193FF79D00D54BB7 /* libsqlite3.0.dylib */,
+				057FD598193FF74C00D54BB7 /* libsqlite3.dylib */,
+				057FD558193FF20800D54BB7 /* Foundation.framework */,
+				057FD55A193FF20800D54BB7 /* CoreGraphics.framework */,
+				057FD55C193FF20800D54BB7 /* UIKit.framework */,
+				057FD57D193FF20800D54BB7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		057FD55E193FF20800D54BB7 /* ProductsApp */ = {
+			isa = PBXGroup;
+			children = (
+				057FD5A31940079F00D54BB7 /* Utilities */,
+				057FD59F194000AB00D54BB7 /* Database */,
+				057FD594193FF63B00D54BB7 /* Models */,
+				057FD5BA19429DC600D54BB7 /* View Controllers */,
+				057FD5B919429DAB00D54BB7 /* Table Cells */,
+				057FD567193FF20800D54BB7 /* VRCAppDelegate.h */,
+				057FD568193FF20800D54BB7 /* VRCAppDelegate.m */,
+				057FD56A193FF20800D54BB7 /* Main_iPhone.storyboard */,
+				057FD576193FF20800D54BB7 /* Images.xcassets */,
+				057FD55F193FF20800D54BB7 /* Supporting Files */,
+			);
+			path = ProductsApp;
+			sourceTree = "<group>";
+		};
+		057FD55F193FF20800D54BB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05E4703A1947F8D700BBCB69 /* VRCProductsApp-Info.plist */,
+				0510B2BC19465E5500D6CBF7 /* SampleData.h */,
+				057FD59D193FFFF300D54BB7 /* products.sql */,
+				057FD561193FF20800D54BB7 /* InfoPlist.strings */,
+				057FD564193FF20800D54BB7 /* main.m */,
+				057FD566193FF20800D54BB7 /* VRCProductsApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		057FD583193FF20800D54BB7 /* ProductsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				057FD584193FF20800D54BB7 /* Supporting Files */,
+				057FD589193FF20800D54BB7 /* TestDatabase.m */,
+				0510B2BA1946511C00D6CBF7 /* TestUtilities.m */,
+			);
+			path = ProductsAppTests;
+			sourceTree = "<group>";
+		};
+		057FD584193FF20800D54BB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05E4703C1947F98D00BBCB69 /* VRCProductsAppTests-Info.plist */,
+				057FD586193FF20800D54BB7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		057FD594193FF63B00D54BB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				057FD595193FF68800D54BB7 /* Product.h */,
+				057FD596193FF68800D54BB7 /* Product.m */,
+				057FD5AA1940273B00D54BB7 /* Product+AddProduct.h */,
+				057FD5AB1940273B00D54BB7 /* Product+AddProduct.m */,
+				057FD5AD1941357B00D54BB7 /* Product+GetProducts.h */,
+				057FD5AE1941357B00D54BB7 /* Product+GetProducts.m */,
+				057FD5B019413BF500D54BB7 /* Product+UpdateProduct.h */,
+				057FD5B119413BF500D54BB7 /* Product+UpdateProduct.m */,
+				057FD5B31941503B00D54BB7 /* Product+DeleteProduct.h */,
+				057FD5B41941503B00D54BB7 /* Product+DeleteProduct.m */,
+				057FD5B619418BE600D54BB7 /* Product+LoadProductDetails.h */,
+				057FD5B719418BE600D54BB7 /* Product+LoadProductDetails.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		057FD59F194000AB00D54BB7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				057FD5A0194000CB00D54BB7 /* VRCProductsDatabaseManager.h */,
+				057FD5A1194000CB00D54BB7 /* VRCProductsDatabaseManager.m */,
+				057FD5A719401B4200D54BB7 /* VRCDatabaseRecord.h */,
+				057FD5A819401B4200D54BB7 /* VRCDatabaseRecord.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		057FD5A31940079F00D54BB7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				057FD5A4194007B600D54BB7 /* VRCUtilities.h */,
+				057FD5A5194007B600D54BB7 /* VRCUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		057FD5B919429DAB00D54BB7 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				057FD5D01942BFB700D54BB7 /* VRCCellLabel.h */,
+				057FD5D11942BFB700D54BB7 /* VRCCellLabel.m */,
+				057FD5D21942BFB700D54BB7 /* VRCCellLabel.xib */,
+				057FD5E91942F6E100D54BB7 /* VRCCellTextFieldDelegate.h */,
+				057FD5C61942A4FE00D54BB7 /* VRCCellTextField.h */,
+				057FD5C71942A4FE00D54BB7 /* VRCCellTextField.m */,
+				057FD5C81942A4FE00D54BB7 /* VRCCellTextField.xib */,
+				057FD5EA1943A75400D54BB7 /* VRCCellTextViewDelegate.h */,
+				057FD5CB1942B3DB00D54BB7 /* VRCCellTextView.h */,
+				057FD5CC1942B3DB00D54BB7 /* VRCCellTextView.m */,
+				057FD5CD1942B3DB00D54BB7 /* VRCCellTextView.xib */,
+				0510B2A31944399F00D6CBF7 /* VRCCellNumberField.h */,
+				0510B2A41944399F00D6CBF7 /* VRCCellNumberField.m */,
+				0510B2A51944399F00D6CBF7 /* VRCCellNumberField.xib */,
+				0510B2AD194450AF00D6CBF7 /* VRCCellPictureSelectorDelegate.h */,
+				0510B2A8194442CD00D6CBF7 /* VRCCellPictureSelector.h */,
+				0510B2A9194442CD00D6CBF7 /* VRCCellPictureSelector.m */,
+				0510B2AA194442CD00D6CBF7 /* VRCCellPictureSelector.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		057FD5BA19429DC600D54BB7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0510B2B5194631CA00D6CBF7 /* VRCMainViewController.h */,
+				0510B2B6194631CA00D6CBF7 /* VRCMainViewController.m */,
+				057FD5BD19429E5B00D54BB7 /* VRCProductsListViewController.h */,
+				057FD5BE19429E5B00D54BB7 /* VRCProductsListViewController.m */,
+				0510B2B8194631F600D6CBF7 /* VRCProductsListViewController.xib */,
+				057FD5BB19429E5B00D54BB7 /* VRCProductViewController.h */,
+				057FD5BC19429E5B00D54BB7 /* VRCProductViewController.m */,
+				0510B2B319462E5A00D6CBF7 /* VRCProductViewController.xib */,
+				057FD5DF1942CEE900D54BB7 /* VRCAddColorViewController.h */,
+				057FD5E01942CEE900D54BB7 /* VRCAddColorViewController.m */,
+				057FD5E11942CEE900D54BB7 /* VRCAddColorViewController.xib */,
+				057FD5E41942E69C00D54BB7 /* VRCAddStoreViewController.h */,
+				057FD5E51942E69C00D54BB7 /* VRCAddStoreViewController.m */,
+				057FD5E61942E69C00D54BB7 /* VRCAddStoreViewController.xib */,
+				0510B2AE1945108600D6CBF7 /* VRCPhotoViewController.h */,
+				0510B2AF1945108600D6CBF7 /* VRCPhotoViewController.m */,
+				0510B2B01945108600D6CBF7 /* VRCPhotoViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		057FD554193FF20800D54BB7 /* VRCProductsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057FD58D193FF20800D54BB7 /* Build configuration list for PBXNativeTarget "VRCProductsApp" */;
+			buildPhases = (
+				057FD551193FF20800D54BB7 /* Sources */,
+				057FD552193FF20800D54BB7 /* Frameworks */,
+				057FD553193FF20800D54BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VRCProductsApp;
+			productName = ProductsApp;
+			productReference = 057FD555193FF20800D54BB7 /* ProductsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		057FD57B193FF20800D54BB7 /* VRCProductsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057FD590193FF20800D54BB7 /* Build configuration list for PBXNativeTarget "VRCProductsAppTests" */;
+			buildPhases = (
+				057FD578193FF20800D54BB7 /* Sources */,
+				057FD579193FF20800D54BB7 /* Frameworks */,
+				057FD57A193FF20800D54BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				057FD582193FF20800D54BB7 /* PBXTargetDependency */,
+			);
+			name = VRCProductsAppTests;
+			productName = ProductsAppTests;
+			productReference = 057FD57C193FF20800D54BB7 /* VRCProductsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		057FD54D193FF20800D54BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = VRCode;
+				TargetAttributes = {
+					057FD57B193FF20800D54BB7 = {
+						TestTargetID = 057FD554193FF20800D54BB7;
+					};
+				};
+			};
+			buildConfigurationList = 057FD550193FF20800D54BB7 /* Build configuration list for PBXProject "VRCProductsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 057FD54C193FF20800D54BB7;
+			productRefGroup = 057FD556193FF20800D54BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				057FD554193FF20800D54BB7 /* VRCProductsApp */,
+				057FD57B193FF20800D54BB7 /* VRCProductsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		057FD553193FF20800D54BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E4703E1947FB7100BBCB69 /* Main_iPhone.storyboard in Resources */,
+				057FD5CF1942B3DB00D54BB7 /* VRCCellTextView.xib in Resources */,
+				057FD5E31942CEE900D54BB7 /* VRCAddColorViewController.xib in Resources */,
+				0510B2A71944399F00D6CBF7 /* VRCCellNumberField.xib in Resources */,
+				057FD5CA1942A4FE00D54BB7 /* VRCCellTextField.xib in Resources */,
+				0510B2AC194442CD00D6CBF7 /* VRCCellPictureSelector.xib in Resources */,
+				057FD5E81942E69C00D54BB7 /* VRCAddStoreViewController.xib in Resources */,
+				0510B2B9194631F600D6CBF7 /* VRCProductsListViewController.xib in Resources */,
+				057FD577193FF20800D54BB7 /* Images.xcassets in Resources */,
+				0510B2B419462E5A00D6CBF7 /* VRCProductViewController.xib in Resources */,
+				057FD59E193FFFF300D54BB7 /* products.sql in Resources */,
+				05E4703D1947F98D00BBCB69 /* VRCProductsAppTests-Info.plist in Resources */,
+				0510B2B21945108600D6CBF7 /* VRCPhotoViewController.xib in Resources */,
+				057FD5D41942BFB700D54BB7 /* VRCCellLabel.xib in Resources */,
+				057FD563193FF20800D54BB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057FD57A193FF20800D54BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057FD588193FF20800D54BB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		057FD551193FF20800D54BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057FD5AF1941357B00D54BB7 /* Product+GetProducts.m in Sources */,
+				057FD5B219413BF500D54BB7 /* Product+UpdateProduct.m in Sources */,
+				0510B2A61944399F00D6CBF7 /* VRCCellNumberField.m in Sources */,
+				057FD5C019429E5C00D54BB7 /* VRCProductsListViewController.m in Sources */,
+				057FD5C91942A4FE00D54BB7 /* VRCCellTextField.m in Sources */,
+				0510B2AB194442CD00D6CBF7 /* VRCCellPictureSelector.m in Sources */,
+				0510B2B11945108600D6CBF7 /* VRCPhotoViewController.m in Sources */,
+				057FD569193FF20800D54BB7 /* VRCAppDelegate.m in Sources */,
+				057FD5E21942CEE900D54BB7 /* VRCAddColorViewController.m in Sources */,
+				057FD5A6194007B600D54BB7 /* VRCUtilities.m in Sources */,
+				057FD5D31942BFB700D54BB7 /* VRCCellLabel.m in Sources */,
+				0510B2B7194631CA00D6CBF7 /* VRCMainViewController.m in Sources */,
+				057FD597193FF68800D54BB7 /* Product.m in Sources */,
+				057FD565193FF20800D54BB7 /* main.m in Sources */,
+				057FD5B819418BE600D54BB7 /* Product+LoadProductDetails.m in Sources */,
+				057FD5CE1942B3DB00D54BB7 /* VRCCellTextView.m in Sources */,
+				057FD5E71942E69C00D54BB7 /* VRCAddStoreViewController.m in Sources */,
+				057FD5A2194000CB00D54BB7 /* VRCProductsDatabaseManager.m in Sources */,
+				057FD5AC1940273B00D54BB7 /* Product+AddProduct.m in Sources */,
+				057FD5B51941503B00D54BB7 /* Product+DeleteProduct.m in Sources */,
+				057FD5A919401B4200D54BB7 /* VRCDatabaseRecord.m in Sources */,
+				057FD5BF19429E5B00D54BB7 /* VRCProductViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057FD578193FF20800D54BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0510B2BB1946511C00D6CBF7 /* TestUtilities.m in Sources */,
+				057FD58A193FF20800D54BB7 /* TestDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		057FD582193FF20800D54BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 057FD554193FF20800D54BB7 /* VRCProductsApp */;
+			targetProxy = 057FD581193FF20800D54BB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		057FD561193FF20800D54BB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				057FD562193FF20800D54BB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		057FD56A193FF20800D54BB7 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				057FD56B193FF20800D54BB7 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		057FD586193FF20800D54BB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				057FD587193FF20800D54BB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		057FD58B193FF20800D54BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		057FD58C193FF20800D54BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		057FD58E193FF20800D54BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProductsApp/VRCProductsApp-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ProductsApp/VRCProductsApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = ProductsApp;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		057FD58F193FF20800D54BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProductsApp/VRCProductsApp-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ProductsApp/VRCProductsApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = ProductsApp;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		057FD591193FF20800D54BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VRCProductsApp.app/VRCProductsApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProductsApp/VRCProductsApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ProductsAppTests/VRCProductsAppTests-Info.plist";
+				PRODUCT_NAME = VRCProductsAppTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		057FD592193FF20800D54BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VRCProductsApp.app/VRCProductsApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProductsApp/VRCProductsApp-Prefix.pch";
+				INFOPLIST_FILE = "ProductsAppTests/VRCProductsAppTests-Info.plist";
+				PRODUCT_NAME = VRCProductsAppTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		057FD550193FF20800D54BB7 /* Build configuration list for PBXProject "VRCProductsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057FD58B193FF20800D54BB7 /* Debug */,
+				057FD58C193FF20800D54BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057FD58D193FF20800D54BB7 /* Build configuration list for PBXNativeTarget "VRCProductsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057FD58E193FF20800D54BB7 /* Debug */,
+				057FD58F193FF20800D54BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057FD590193FF20800D54BB7 /* Build configuration list for PBXNativeTarget "VRCProductsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057FD591193FF20800D54BB7 /* Debug */,
+				057FD592193FF20800D54BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 057FD54D193FF20800D54BB7 /* Project object */;
+}
