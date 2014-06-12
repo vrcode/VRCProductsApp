@@ -76,6 +76,9 @@ typedef NS_ENUM(NSInteger, ActionSheetPhotoMenuButton) {
         // Product name exists, we're editing an existing product
         // Add a "Delete" button to toolbar in order to
         // allow to remove Product after confirmation
+
+        self.title = @"Details";
+
         _barButtonDelete = [
             [UIBarButtonItem alloc]
             initWithTitle:@"Delete"
@@ -92,6 +95,9 @@ typedef NS_ENUM(NSInteger, ActionSheetPhotoMenuButton) {
         // Add a "Save" button to toolbar, it should be
         // disabled initially and only enabled when a
         // product name is provided
+
+        self.title = @"Add Product";
+
         _barButtonSave = [
             [UIBarButtonItem alloc]
             initWithBarButtonSystemItem:UIBarButtonSystemItemSave
@@ -141,8 +147,6 @@ typedef NS_ENUM(NSInteger, ActionSheetPhotoMenuButton) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.title = @"Details";
 
     // Put TableView in editing mode in order to be able to add
     // and remove cells for Colors and Stores
