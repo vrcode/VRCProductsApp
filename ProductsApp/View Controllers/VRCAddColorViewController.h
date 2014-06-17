@@ -33,6 +33,6 @@
     notify when a color was selected.
  */
 
-@property (nonatomic, assign)   id<AddColorDelegate> delegate;
+@property (nonatomic, weak)   id<AddColorDelegate> delegate;
 
 @end

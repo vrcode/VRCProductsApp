@@ -56,6 +56,12 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    // Check if _productForDetails has been set, which indicates
+    // that we're returning from the ProductViewController
+    // The table view is then refreshed appriately according
+    // to the different changes that may have been made thru
+    // the ProductViewController on either: "Details" (View/Edit),
+    // or "Add Product" mode
     if (_productForDetails) {
         if (_productForDetails.productWasDeleted) {
             [_products removeObjectAtIndex:_productForDetailsIndexPath.row];

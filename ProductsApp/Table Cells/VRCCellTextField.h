@@ -12,6 +12,7 @@
 /**
     Custom Table View Cell featuring a Text Field.
  */
+
 @interface VRCCellTextField : UITableViewCell <UITextFieldDelegate>
 
 /** Cell's text field */

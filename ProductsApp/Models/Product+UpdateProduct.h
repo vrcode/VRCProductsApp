@@ -16,7 +16,7 @@
 
 /**
     Writes the record for this instance, but only
-    if it needs to be updated and the record is ready
+    if changes were made and if the record is ready (has a DB handle)
     (@see DatabaseRecord.isRecordReady).
  */
 

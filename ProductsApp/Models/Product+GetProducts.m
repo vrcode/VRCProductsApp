@@ -49,6 +49,9 @@
             if (result == SQLITE_ROW) {
                 products = [[NSMutableArray alloc] init];
 
+                // We got at least one record, so put it in a Product object
+                // and add it to the array. Do the same for any other records
+                // returned
                 do {
                     long productId = sqlite3_column_int(statement, 0);
                     // Get Product's record into variables

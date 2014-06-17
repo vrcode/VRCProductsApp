@@ -10,7 +10,7 @@
 
 /**
     Initial view controller. It provides a button to create
-    sample Product records, and a button to open
+    sample Product records (from a JSON representation), and a button to open
     the list of products (@see ProductsListViewController)
  */
 

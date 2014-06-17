@@ -30,6 +30,8 @@
     @param  productDescription  Description for the Product being added.
     @param  db                  SQLite handle for the database where the
                                 product record should be inserted.
+    @return A new Product object successfully inserted in the DB
+            with the provided Name and Description
  */
 
 + (Product *)addProductWithName:(NSString *)productName

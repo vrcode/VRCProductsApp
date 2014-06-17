@@ -57,12 +57,21 @@
 
 /** Flag to indicate that the Product's record has been written successfully
     to the database.
+    
+    This is used in VRCProductsList to find out if the a Product that
+    pushed to the details view has been modified, so the row for that
+    Product is refreshed in order to reflect any changes like name or
+    photo change.
  */
 
 @property (nonatomic)           BOOL                productWasUpdated;
 
 /** Flag to indicate that the Product's record has been deleted
     successfully from the database.
+    
+    This is used in VRCProductsList to find out if the a Product that
+    pushed to the details view has been delete, so the row is removed
+    once the view is shown.
  */
 
 @property (nonatomic)           BOOL                productWasDeleted;
@@ -70,13 +79,16 @@
 /**
     Flags object as a new Product, enabling it to be inserted
     in the database.
+    
+    Used to find out if a product was actually added after
+    the "Add Product" view is dismissed.
  */
 
 @property (nonatomic)           BOOL                isNewProduct;
 
 
 /**
-    Initializes a new Product with a reference to
+    Initializes a new Product object with a reference to
     an existing SQLite database.
 
     @param database A handle to a SQLite database.

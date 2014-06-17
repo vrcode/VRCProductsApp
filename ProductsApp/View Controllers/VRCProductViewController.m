@@ -91,10 +91,10 @@ typedef NS_ENUM(NSInteger, ActionSheetPhotoMenuButton) {
         self.navigationItem.rightBarButtonItem = _barButtonDelete;
     }
     else {
-        // Product name is nill, we're creating a new one
+        // Product name is nill, we're creating a new one.
         // Add a "Save" button to toolbar, it should be
         // disabled initially and only enabled when a
-        // product name is provided
+        // product name is provided.
 
         self.title = @"Add Product";
 
